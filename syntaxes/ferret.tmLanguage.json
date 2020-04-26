@@ -74,6 +74,14 @@
       }, {
         "captures": {
           "1": {
+            "name": "entity.name.function.ferret"
+          }
+        },
+        "match": "(\\.[-a-zA-Z0-9_]+)+\\s*(\\->|\\{)",
+        "name": "meta.function.ferret"
+      }, {
+        "captures": {
+          "1": {
             "name": "storage.type.other.ferret"
           }
         },
