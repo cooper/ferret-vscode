@@ -1,0 +1,25 @@
+{
+    "name": "ferret-vscode",
+    "displayName": "Ferret",
+    "description": "Ferret language support",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ferret",
+            "aliases": ["Ferret", "ferret"],
+            "extensions": [".frt",".frtdoc"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ferret",
+            "scopeName": "source.ferret",
+            "path": "./syntaxes/ferret.tmLanguage.json"
+        }]
+    }
+}
