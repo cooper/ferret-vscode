@@ -125,7 +125,7 @@
         },
         "contentName": "text.embedded.ferret"
       }, {
-        "match": "(?<![>\\.\\*])\\b(continue|do|else|for|in|if|last|next|redo|until|while|switch|case|before|after|load|stop|fail|catch|throw|inside|can|isa|transform|satisfies|gather|take)\\b",
+        "match": "(?<![>\\.\\*])\\b(continue|do|else|for|in|if|last|next|redo|defer|until|while|switch|case|before|after|load|stop|fail|catch|throw|inside|can|isa|transform|satisfies|gather|take)\\b",
         "name": "keyword.control.ferret"
       }, {
         "match": "\\->",
@@ -241,7 +241,7 @@
         "match": "(?<!\\$|\\.)\\b(_?[A-Z]+[_a-zA-Z0-9_x7f-xff\\$]*)\\b",
         "name": "support.class.ferret"
       }, {
-        "match": "(\\.)?\\b(shift|unshift|pop|push|without|withoutAll|grep|map|first|any|all|remove|removeAll|connect|print|println|say|close|trimPrefix|trimSuffix|hasSuffix|hasPrefix|fill|word|fromWord|match|copy|setValue|getValue|deleteValue|weakenValue)\\b(?=\\(|!)",
+        "match": "(\\.)?\\b(shift|unshift|pop|push|without|withoutAll|grep|map|first|any|all|remove|removeAll|connect|print|println|say|close|trimPrefix|trimSuffix|hasSuffix|hasPrefix|fill|word|fromWord|match|copy|join|setValue|getValue|deleteValue|weakenValue)\\b(?=\\(|!)",
         "captures": {
           "1": {
             "name": "meta.delimiter.method.period.ferret"
