@@ -125,7 +125,10 @@
         },
         "contentName": "text.embedded.ferret"
       }, {
-        "match": "(?<![>\\.\\*])\\b(continue|do|else|for|in|if|last|next|redo|return|until|while|switch|case|before|after|load|stop|fail|catch|throw|inside|can|isa|transform|satisfies|gather|take)\\b",
+        "match": "(?<![>\\.\\*])\\b(continue|do|else|for|in|if|last|next|redo|until|while|switch|case|before|after|load|stop|fail|catch|throw|inside|can|isa|transform|satisfies|gather|take)\\b",
+        "name": "keyword.control.ferret"
+      }, {
+        "match": "\\->",
         "name": "keyword.control.ferret"
       }, {
         "match": "\\b(want|need|share|var)\\b",
