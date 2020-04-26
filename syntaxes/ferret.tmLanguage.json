@@ -67,9 +67,20 @@
         "captures": {
           "1": {
             "name": "storage.type.func.ferret"
+          },
+          "2": {
+            "name": "entity.name.function.ferret"
           }
         },
-        "match": "\\b(init|on|op)\\b",
+        "match": "\\b(op)\\b\\s+(==|=~|[\\^%\\+\\-\\*/<>])+\\s*[^\\w\\{]",
+        "name": "meta.function.ferret"
+      }, {
+        "captures": {
+          "1": {
+            "name": "storage.type.func.ferret"
+          }
+        },
+        "match": "\\b(init|on)\\b",
         "name": "meta.function.ferret"
       }, {
         "captures": {
