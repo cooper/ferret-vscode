@@ -367,6 +367,17 @@
           }, {
             "captures": {
               "1": {
+                "name": "variable.language.ferret"
+              },
+              "2": {
+                "name": "punctuation.definition.variable.ferret"
+              }
+            },
+            "match": "(?<!\\.)((\\*)self|this|scope|return|class|argv|file|line)\\b((?:\\.)(?:(\\b\\d\\w+)|(?:[A-Z][A-Z0-9_$]*\\b\\$+)|(?:[\\w$]+)))*",
+            "name": "variable.other.readwrite.special.ferret"
+          }, {
+            "captures": {
+              "1": {
                 "name": "punctuation.definition.variable.ferret"
               },
               "2": {
@@ -407,6 +418,14 @@
             },
             "match": "(\\$)([\\p{L}_]+[\\p{N}\\p{L}_]*)",
             "name": "variable.other.readwrite.global.ferret"
+          }, {
+            "captures": {
+              "1": {
+                "name": "punctuation.definition.variable.ferret"
+              }
+            },
+            "match": "(?<!\\.)(\\*)(self|this|scope|return|class|argv|file|line)",
+            "name": "variable.language.ferret"
           }, {
             "captures": {
               "1": {
