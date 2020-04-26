@@ -252,7 +252,7 @@
         "match": "(?<!\\$|\\.)\\b(_?[A-Z]+[_a-zA-Z0-9_x7f-xff\\$]*)\\b",
         "name": "support.class.ferret"
       }, {
-        "match": "(\\.)?\\b(shift|unshift|pop|push|without|withoutAll|grep|map|first|any|all|remove|removeAll|connect|print|println|say|close|trimPrefix|trimSuffix|hasSuffix|hasPrefix|fill|word|fromWord|match|copy|join|setValue|getValue|deleteValue|weakenValue)\\b(?=\\(|!)",
+        "match": "(\\.)?\\b(shift|unshift|pop|push|without|withoutAll|grep|contains|indexOf|map|first|any|all|remove|removeAll|splice|reverse|flatten|connect|print|println|say|close|trimPrefix|trimSuffix|hasSuffix|hasPrefix|fill|word|fromWord|match|copy|join|setValue|getValue|deleteValue|weakenValue)\\b(?=\\(|!)",
         "captures": {
           "1": {
             "name": "meta.delimiter.method.period.ferret"
@@ -273,7 +273,7 @@
           }
         }
       }, {
-        "match": "(\\.)?\\b(proto|hashValue|lowercase|uppercase|result|empty|length|sum|sum0|lastIndex|even|odd|sqrt|cbrt|ceil|floor|round|square|name|signature|version|keys|values)\\b",
+        "match": "(\\.)?\\b(proto|hashValue|lowercase|uppercase|result|empty|length|sum|sum0|s|lastIndex|even|odd|sqrt|cbrt|ceil|floor|round|square|name|signature|version|keys|values|nextElement|nextElements|iterator)\\b",
         "captures": {
           "1": {
             "name": "meta.delimiter.method.period.ferret"
