@@ -61,7 +61,7 @@
             "name": "entity.name.function.ferret"
           }
         },
-        "match": "\\b(func|method|hook|prop(?:\\?)?)\\b(?:\\?)?(?:\\s+([-a-zA-Z0-9_]+))?\\s*[^\\w\\{]",
+        "match": "\\b(func|method|hook|type|alias|prop(?:\\?)?)\\b(?:\\?)?(?:\\s+([-a-zA-Z0-9_]+))?\\s*[^\\w\\{]",
         "name": "meta.function.ferret"
       }, {
         "captures": {
@@ -90,13 +90,6 @@
         },
         "match": "(\\.[-a-zA-Z0-9_]+)+\\s*(\\->|\\{)",
         "name": "meta.function.ferret"
-      }, {
-        "captures": {
-          "1": {
-            "name": "storage.type.other.ferret"
-          }
-        },
-        "match": "\\b(type|alias)\\b"
       }, {
         "begin": "^(?=(\\t| {4}))",
         "end": "(?=[^\\t\\s])",
