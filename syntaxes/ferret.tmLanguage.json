@@ -276,6 +276,14 @@
           }
         }
       }, {
+        "comment": "numbers",
+        "match": "\\b((0(x|X)[0-9a-fA-F]*)|((\\d+\\.?\\d*)|(\\.\\d+))((e|E)(\\+|-)?\\d+)?)(i?)\\b",
+        "name": "constant.numeric.ferret"
+      }, {
+        "comment": "numbers",
+        "match": "\\bi\\b",
+        "name": "constant.numeric.imaginary.ferret"
+      }, {
         "captures": {
           "1": {
             "name": "punctuation.definition.constant.ferret"
