@@ -223,7 +223,7 @@
           }
         }
       }, {
-        "match": "\\b(dump|inspect|say|print|delete|weaken|detail)\\b",
+        "match": "\\b(dump|inspect|delay|timeout|say|print|delete|weaken|detail)\\b",
         "name": "support.function.ferret"
       }, {
         "comment": "Mark as namespace separator if double colons followed by capital letter",
