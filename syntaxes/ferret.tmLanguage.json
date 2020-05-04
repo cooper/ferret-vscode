@@ -274,7 +274,7 @@
             "name": "meta.delimiter.method.period.ferret"
           },
           "2": {
-            "name": "support.function.ferret"
+            "name": "support.function.special.ferret"
           }
         }
       }, {
@@ -285,12 +285,17 @@
             "name": "meta.delimiter.method.period.ferret"
           },
           "2": {
-            "name": "support.function.ferret"
+            "name": "support.function.special.ferret"
           }
         }
       }, {
         "comment": "numbers",
-        "match": "\\b((0(x|X)[0-9a-fA-F]*)|((\\d+\\.?\\d*)|(\\.\\d+))((e|E)(\\+|-)?\\d+)?)(i?)\\b",
+        "captures": {
+          "1": {
+            "name": "constant.numeric.imaginary.ferret"
+          }
+        },
+        "match": "\\b((?:0(?:x|X)[0-9a-fA-F]*)|(?:(?:\\d+\\.?\\d*)|(?:\\.\\d+))(?:(?:e|E)(?:\\+|-)?\\d+)?)(i?)\\b",
         "name": "constant.numeric.ferret"
       }, {
         "comment": "numbers",
