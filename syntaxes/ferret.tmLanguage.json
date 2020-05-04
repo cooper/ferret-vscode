@@ -246,7 +246,7 @@
         "name": "support.class.ferret"
       }, {
         "comment": "Support properties that do NOT require () or !",
-        "match": "(\\.)?\\b(proto|init|hashValue|lowercase|uppercase|result|empty|length|sum|sum0|s|lastIndex|even|odd|sqrt|log|log10|exp|e|pi|cbrt|abs|ceil|floor|round|square|name|signature|version|keys|values|nextElement|nextElements|iterator|sin|asin|cos|acos|tan|atan|atan2|cot|sec|csc)\\b",
+        "match": "(\\.)?\\b(proto|init|hashValue|lowercase|uppercase|result|empty|length|sum|sum0|s|lastIndex|even|odd|sqrt|log|log10|exp|e|pi|cbrt|abs|ceil|floor|round|square|name|signature|version|keys|values|nextElement|nextElements|more|iterator|sin|asin|cos|acos|tan|atan|atan2|cot|sec|csc)\\b",
         "captures": {
           "1": {
             "name": "meta.delimiter.method.period.ferret"
@@ -268,7 +268,18 @@
         }
       }, {
         "comment": "special methods",
-        "match": "(\\.)?(\\*\\b(?:instanceOfClass|isa|addParent)\\b)(?=\\(|!)",
+        "match": "(\\.)?(\\*\\b(instanceOfClass|isa|addParent|instanceOfClass|get|getOwn|set|commonClass|fullName|addListener)\\b)(?=\\(|!)",
+        "captures": {
+          "1": {
+            "name": "meta.delimiter.method.period.ferret"
+          },
+          "2": {
+            "name": "support.function.ferret"
+          }
+        }
+      }, {
+        "comment": "special properties (non-methods)",
+        "match": "(\\.)?(\\*\\b(ISA|self|classes|ownProperties|allProperties|description|addr|generics)\\b)",
         "captures": {
           "1": {
             "name": "meta.delimiter.method.period.ferret"
