@@ -88,7 +88,8 @@
             "name": "entity.name.function.ferret"
           }
         },
-        "match": "(\\.[-a-zA-Z0-9_]+)+\\s*(\\->|\\{)",
+        "comment": "short-hand computed property or method",
+        "match": "^(\\s*\\.[-a-zA-Z0-9_]+)+\\s*(\\->|\\{)",
         "name": "meta.function.ferret"
       }, {
         "begin": "^(?=(\\t| {4}))",
@@ -257,7 +258,7 @@
         }
       }, {
         "comment": "Support functions/properties that are only highlighted as calls",
-        "match": "(\\.)?\\b(shift|unshift|pop|push|without|withoutAll|grep|contains|indexOf|map|first|any|all|remove|removeAll|splice|reverse|flatten|root|logb|factorial|polar|connect|print|println|say|close|trimPrefix|trimSuffix|hasSuffix|hasPrefix|fill|word|fromWord|match|copy|join|setValue|getValue|deleteValue|weakenValue)\\b(?=\\(|!)",
+        "match": "(\\.)?\\b(shift|unshift|pop|push|without|withoutAll|grep|contains|indexOf|map|first|any|all|remove|removeAll|splice|split|reverse|flatten|root|logb|factorial|polar|connect|print|println|say|close|trimPrefix|trimSuffix|hasSuffix|hasPrefix|fill|word|fromWord|match|copy|join|setValue|getValue|deleteValue|weakenValue)\\b(?=\\(|!)",
         "captures": {
           "1": {
             "name": "meta.delimiter.method.period.ferret"
